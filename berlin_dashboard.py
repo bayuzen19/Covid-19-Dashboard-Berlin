@@ -194,7 +194,7 @@ if nocyber == False:
     mplcyberpunk.add_glow_effects()
 else:
     legend = plt.legend(selected_districts)
-    plt.setp(legend.get_text(),color='k')
+    plt.setp(legend.get_texts(),color='k')
 
 st.pyplot(fig)
 st.table(data_to_plot.iloc[-10:,:])
